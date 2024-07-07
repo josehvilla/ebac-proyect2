@@ -1,0 +1,82 @@
+.movie {
+  &-container {
+    width: 900px;
+    background-color: $almostBlack;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    @include ipad {
+      width: 90%;
+    }
+
+    @include iphone() {
+      padding: 10px;
+      flex-direction: column;
+    }
+  }
+
+  &-poster {
+    width: 80%;
+
+    @include iphone() {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  &-details {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+.details {
+  &-header {
+    width: 100%;
+
+    h2 {
+      padding-bottom: 0;
+      color: $white;
+    }
+  }
+
+  &-italics-text {
+    font-size: 15px;
+    color: $gray;
+
+    b {
+      font-size: 18px;
+      color: $white;
+    }
+  }
+
+  &-ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 15px;
+    color: $gray;
+    margin-top: 10px;
+
+    strong {
+      color: $white;
+      font-weight: 600;
+    }
+  }
+
+  &-plot {
+    font-size: 15px;
+    font-style: italic;
+    color: $gray;
+    margin-top: 10px;
+  }
+}

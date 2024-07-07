@@ -1,0 +1,84 @@
+.header {
+  height: 250px;
+  background-color: $orange;
+  font-weight: bolder;
+
+  &-container {
+    width: 900px;
+    padding: 20px 0;
+    color: $white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+
+    @include ipad {
+      width: 90%;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 100px;
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 50px;
+
+        @include ipad {
+          font-size: 40px;
+        }
+
+        @include iphone() {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  &-link {
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: $white;
+      font-family: $fontFamily;
+      transition: color ease-in-out 0.5s;
+
+      &:hover {
+        @include hover {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+.search-box {
+  width: 900px;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+
+  @include ipad {
+    width: 90%;
+  }
+
+  input {
+    margin: 0;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    background-color: $almostBlack;
+    border-radius: 4px;
+    font-family: $fontFamily;
+    color: $gray;
+  }
+}

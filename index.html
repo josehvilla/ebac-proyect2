@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moviepedia | Buscador de peliculas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css"/>
+  </head>
+
+  <body>
+    <article class="header">
+      <section class="header-container">
+        <div class="header-title">
+          <img src="img/logo.png">
+          <h1>Buscador de peliculas</h1>
+        </div>
+      </section>
+
+      <section class="search-box">
+        <input
+          type="text"
+          placeholder="Escribe el nombre de la pelicula aquí..."
+          class="search-bar"
+          id="Input"
+        />
+      </section>
+    </article>
+
+    <article class="main">
+      <section class="fav-container"></section>
+    </article>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

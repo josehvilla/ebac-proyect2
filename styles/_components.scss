@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fontFamily;
+  background-color: $black;
+}
+
+.main {
+  padding: 40px;
+
+  @include iphone() {
+    padding: 20px;
+  }
+}

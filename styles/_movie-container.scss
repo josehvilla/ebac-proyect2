@@ -1,0 +1,68 @@
+.fav {
+  &-container {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+
+    @include ipad {
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include ipadAirMini {
+      width: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include iphone {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-item {
+    flex-basis: calc(33.3% - 10px);
+    padding: 10px;
+    background-color: $almostBlack;
+    border-radius: 4px;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    @include ipad {
+      width: 100%;
+    }
+  }
+
+  &-poster a {
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  &-details-box {
+    margin: 5px 5px 5px 0;
+  }
+
+  &-movie {
+    &-name a {
+      text-decoration: none;
+      color: $white;
+      font-size: 15px;
+    }
+
+    &-rating a {
+      text-decoration: none;
+      color: $gray;
+      font-style: italic;
+      font-size: 13px;
+    }
+  }
+}

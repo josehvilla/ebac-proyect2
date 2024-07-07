@@ -1,0 +1,30 @@
+$fontFamily: "Poppins", Arial, Helvetica, sans-serif;
+$white: #ffffff;
+$black: #000000;
+$almostBlack: #1f1f28;
+$orange: #ffb521;
+$gray: #73727b;
+
+@mixin ipad {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin ipadAirMini {
+  @media screen and (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media screen and (max-width: 430px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    @content;
+  }
+}

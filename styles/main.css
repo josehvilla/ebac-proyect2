@@ -1,0 +1,235 @@
+.header {
+  height: 250px;
+  background-color: #ffb521;
+  font-weight: bolder;
+}
+.header-container {
+  width: 900px;
+  padding: 20px 0;
+  color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .header-container {
+    width: 90%;
+  }
+}
+.header-container .header-title {
+  display: flex;
+  align-items: center;
+}
+.header-container .header-title img {
+  width: 100px;
+}
+.header-container .header-title h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .header-container .header-title h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header-container .header-title h1 {
+    font-size: 25px;
+  }
+}
+.header-link a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  transition: color ease-in-out 0.5s;
+}
+@media (hover: hover) {
+  .header-link a:hover {
+    color: #73727b;
+  }
+}
+
+.search-box {
+  width: 900px;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1024px) {
+  .search-box {
+    width: 90%;
+  }
+}
+.search-box input {
+  margin: 0;
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  background-color: #1f1f28;
+  border-radius: 4px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #73727b;
+}
+
+.fav-container {
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .fav-container {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 820px) {
+  .fav-container {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 430px) {
+  .fav-container {
+    grid-template-columns: 1fr;
+  }
+}
+.fav-item {
+  flex-basis: calc(33.3% - 10px);
+  padding: 10px;
+  background-color: #1f1f28;
+  border-radius: 4px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .fav-item {
+    width: 100%;
+  }
+}
+.fav-poster a {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.fav-poster a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+.fav-details-box {
+  margin: 5px 5px 5px 0;
+}
+.fav-movie-name a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+.fav-movie-rating a {
+  text-decoration: none;
+  color: #73727b;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.movie-container {
+  width: 900px;
+  background-color: #1f1f28;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .movie-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .movie-container {
+    padding: 10px;
+    flex-direction: column;
+  }
+}
+.movie-poster {
+  width: 80%;
+}
+@media screen and (max-width: 430px) {
+  .movie-poster {
+    width: 100%;
+  }
+}
+.movie-poster img {
+  width: 100%;
+  border-radius: 5px;
+}
+.movie-details {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.details-header {
+  width: 100%;
+}
+.details-header h2 {
+  padding-bottom: 0;
+  color: #ffffff;
+}
+.details-italics-text {
+  font-size: 15px;
+  color: #73727b;
+}
+.details-italics-text b {
+  font-size: 18px;
+  color: #ffffff;
+}
+.details-ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 15px;
+  color: #73727b;
+  margin-top: 10px;
+}
+.details-ul strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+.details-plot {
+  font-size: 15px;
+  font-style: italic;
+  color: #73727b;
+  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: #000000;
+}
+
+.main {
+  padding: 40px;
+}
+@media screen and (max-width: 430px) {
+  .main {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
